@@ -1,0 +1,68 @@
+
+
+@import 'libs/bootstrap-reboot.min';
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 100px;
+    &-feedback {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0px 100px 0 15px;
+    }
+}
+.btn {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    width: 273px;
+    height: 54px;
+    background: #FF0000;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page {
+    &-text {
+        display: flex;
+        flex-direction: column;
+        &-center {
+            justify-content: center;
+            text-align: center;
+        }
+    }
+    &-title {
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 60px;
+        color: #0A0A0B;
+    }
+    &-subtitle {
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #FF0000;
+    }
+}
+@import 'blocks/header';
+@import 'blocks/services';
+@import 'blocks/case';
+@import 'blocks/start';
+@import 'blocks/about';
+@import 'blocks/feedback';
+@import 'blocks/discuss';

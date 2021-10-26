@@ -1,0 +1,126 @@
+
+
+.nav {
+  padding: 28px 0px 0 0;
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-logo {
+    max-width: 162px;
+    img {
+      width: 100%;
+    }
+  }
+  &-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__item {
+      margin-right: 67px;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #0A0A0B;
+      }
+    }
+  }
+  &-btn {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0A0A0B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #0A0A0B;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 229px;
+    height: 52px;
+  }
+}
+
+
+.header {
+  height: 900px;
+  background-image: url(../img/header-bg.png);
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  position: relative;
+  &-bg-image {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    z-index: 0;
+  }
+  &-text {
+    padding-top: 116px;
+    z-index: 3;
+    position: relative;
+  }
+  &-title {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 0.02em;
+    color: #0A0A0B;
+    max-width: 695px;
+    z-index: 1;
+    position: relative;
+    &__wrap {
+      position: relative;
+      margin-bottom: 44px;
+    }
+    &__bg-text {
+      position: absolute;
+      left: -4px;
+      top: -75px;
+      font-weight: 900;
+      font-size: 90.5468px;
+      line-height: 180%;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.3);
+      z-index: 0;
+    }
+  }
+  &-cards {
+    display: flex;
+    align-items: center;
+    margin-bottom: 114px;
+  }
+  &-card {
+    max-width: 138px;
+    margin-right: 85px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &__num {
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 130%;
+      margin-bottom: 4px;
+      background: linear-gradient(140deg, #FF0000 0%, #FF7A00 80%, #FFB300 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    &__descr {
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 140%;
+      letter-spacing: 0.04em;
+      color: #000000;
+    }
+  }
+  &-btn {
+
+  }
+}

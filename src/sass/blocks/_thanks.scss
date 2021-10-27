@@ -1,0 +1,47 @@
+.thanks {
+  position: relative;
+  padding: 41px 0px 80px 0px;
+  background: #F3F4F7;
+  &-bg {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+  }
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container {
+    padding: 0 150px 0 100px;
+  }
+  &-text {
+    position: relative;
+    z-index: 5;
+  }
+  &-image {
+    position: relative;
+    z-index: 5;
+  }
+  &-title {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 90px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FF0000;
+    margin-bottom: 17px;
+  }
+  &-descr {
+    font-size: 20px;
+    line-height: 26px;
+    color: #474748;
+    margin-bottom: 83px;
+    font-family: 'Gilroy';
+  }
+  &-btn {
+    width: 261px;
+    height: 54px;
+  }
+}

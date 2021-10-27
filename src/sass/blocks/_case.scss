@@ -57,4 +57,25 @@
   &-title {
     max-width: 530px;
   }
+  &-slider {
+    height: 506px;
+  }
+  &-mob {
+    display: none;
+    overflow: hidden;
+    height: 636px;
+    position: relative;
+    &-bottom {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      position: relative;
+      padding-top: 41px;
+    }
+    .swiper-scrollbar {
+      width: 70%!important;
+      margin-left: 0;
+    }
+  }
 }

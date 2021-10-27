@@ -36,6 +36,12 @@ ul {
     justify-content: center;
     align-items: center;
     font-family: 'Gilroy';
+    transition: .3s all;
+    &:hover {
+        text-decoration: none;
+        background: #ec0707;
+        color: #FFFFFF;
+    }
 }
 .page {
     &-bg {
@@ -66,6 +72,163 @@ ul {
         font-family: 'Gilroy';
     }
 }
+.menu {
+    position: fixed;
+    background: #FFFFFF;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateX(-500vh);
+    transition: .6s all;
+    &-active {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    &-close {
+        top: 25px;
+        right: 20px;
+        position: absolute;
+        cursor: pointer;
+    }
+    &-top {
+        display: flex;
+        padding-top: 20px;
+    }
+    &-logo {
+        max-width: 113px;
+        img {
+            width: 100%;
+        }
+    }
+    &-list {
+        margin-top: 54px;
+        text-align: center;
+        &__link {
+            margin-bottom: 40px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            a {
+                font-weight: bold;
+                font-size: 30px;
+                line-height: 30px;
+                color: #0A0A0B;
+            }
+        }
+    }
+
+    &-social {
+        display: flex;
+        margin-top: 70px;
+        &__item {
+            background: #FF0000;
+            width: 34px;
+            height: 34px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            margin-right: 24px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.form {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    width: 100%;
+    height: 100%;
+    &-close {
+        position: absolute;
+        top: 24px;
+        right: 14px;
+        background: #FFFFFF;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    &-card {
+        background: #F3F4F7;
+        position: relative;
+        width: 456px;
+        height: 498px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 68px 0 58px;
+    }
+    &-title {
+        padding-top: 55px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #0A0A0B;
+        margin-bottom: 35px;
+    }
+    label {
+        display: flex;
+        align-items: center;
+        span {
+            margin-left: 12px;
+            font-family: 'Gilroy';
+            font-size: 16px;
+            line-height: 22px;
+            color: #474748;
+            a {
+                font-family: 'Gilroy';
+                font-size: 16px;
+                line-height: 22px;
+                color: #474748;
+                text-decoration: underline;
+            }
+        }
+    }
+    input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #0A0A0B;
+        border-radius: 1px;
+    }
+    &-input {
+        font-family: 'Gilroy';
+        width: 330px;
+        height: 54px;
+        background: #FFFFFF;
+        border-radius: 4px;
+        border: none;
+        padding: 16px 20px 16px 20px;
+        font-size: 16px;
+        line-height: 22px;
+        color: #7C7D7E;
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &-btn {
+        margin-top: 47px;
+        border: none;
+        width: 100%;
+        height: 54px;
+    }
+}
 @import 'blocks/header';
 @import 'blocks/services';
 @import 'blocks/case';
@@ -74,5 +237,6 @@ ul {
 @import 'blocks/feedback';
 @import 'blocks/discuss';
 @import 'blocks/footer';
+@import 'blocks/thanks.scss';
 
 @import 'base/media';

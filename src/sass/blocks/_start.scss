@@ -67,8 +67,16 @@
       letter-spacing: 0.02em;
       color: #FFFFFF;
       font-family: 'Gilroy';
+      &:hover {
+        text-decoration: none;
+        color: #FFFFFF;
+        img {
+          transform: translateX(10px);
+        }
+      }
       img {
         margin-left: 8px;
+        transition: .4s all;
       }
     }
   }

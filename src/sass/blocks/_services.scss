@@ -10,6 +10,8 @@
     left: 0;
   }
   &-text {
+    z-index: 4;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,6 +34,7 @@
     color: #474748;
     p {
       max-width: 552px;
+      font-family: 'Gilroy';
     }
   }
 
@@ -72,12 +75,14 @@
       text-transform: uppercase;
       color: #0A0A0B;
       margin-bottom: 12px;
+      font-family: 'Gilroy';
     }
     &__descr {
       font-size: 14px;
       line-height: 22px;
       letter-spacing: 0.04em;
       color: #474748;
+      font-family: 'Gilroy';
     }
   }
 }

@@ -30,6 +30,7 @@
     font-size: 14px;
     line-height: 20px;
     color: #BABDC3;
+    font-family: 'Gilroy';
     &:hover {
       text-decoration: none;
       color: #BABDC3;
@@ -48,6 +49,7 @@
       justify-content: center;
       align-items: center;
       margin-right: 16px;
+      font-family: 'Gilroy';
       &:last-child {
         margin-right: 0;
       }
@@ -68,5 +70,6 @@
     font-size: 14px;
     line-height: 180%;
     color: #BABDC3;
+    font-family: 'Gilroy';
   }
 }

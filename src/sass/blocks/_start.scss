@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     &__bg {
       mix-blend-mode: lighten;
       position: absolute;
@@ -65,6 +66,7 @@
       line-height: 28px;
       letter-spacing: 0.02em;
       color: #FFFFFF;
+      font-family: 'Gilroy';
       img {
         margin-left: 8px;
       }

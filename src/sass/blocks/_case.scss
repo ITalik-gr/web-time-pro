@@ -12,6 +12,7 @@
     padding-bottom: 17px;
     border-bottom: 1px solid #676767;
     margin-bottom: 50px;
+    
     &__2 {
       margin-bottom: -72px;
     }
@@ -39,6 +40,7 @@
         letter-spacing: 0.04em;
         text-transform: uppercase;
         color: #676767;
+        font-family: 'Gilroy';
       }
     }
     &__link {
@@ -49,6 +51,7 @@
       font-size: 24px;
       line-height: 30px;
       color: #161616;
+      font-family: 'Gilroy';
     }
   }
   &-title {

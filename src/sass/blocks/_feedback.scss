@@ -65,27 +65,26 @@
   background: #E4E8EC;
   border-radius: 0;
   margin-left: 30px;
-  &::before {
-    content: '01';
+  &::before,
+  &:after {
     position: absolute;
-    top: -9px;
-    left: -27px;
     font-weight: 600;
     font-size: 16px;
     line-height: 22px; 
     letter-spacing: 0.02em;
     color: #474748;
+    font-family: 'Gilroy';
+  }
+  &::before {
+    content: '01';
+    top: -9px;
+    left: -27px;
+    
   }
   &::after {
     content: '16';
-    position: absolute;
     top: -9px;
     right: -27px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 22px; 
-    letter-spacing: 0.02em;
-    color: #474748;
   }
   &-drag {
     background: #FF0000;

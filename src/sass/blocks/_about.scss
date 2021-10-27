@@ -33,6 +33,7 @@
       line-height: 30px;
       color: #0A0A0B;
       margin-bottom: 37px;
+      font-family: 'Gilroy';
     }
     &__card {
       background: #F3F4F7;
@@ -59,11 +60,13 @@
     color: #474748;
     p {
       max-width: 530px;
+      font-family: 'Gilroy';
     }
   }
   &-list {
     &__item {
       margin-bottom: 16px;
+      font-family: 'Gilroy';
       span {
         margin-right: 16px;
       }

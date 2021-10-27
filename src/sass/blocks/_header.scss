@@ -13,6 +13,9 @@
       width: 100%;
     }
   }
+  &-mobile {
+    display: none;
+  }
   &-list {
     display: flex;
     align-items: center;
@@ -47,6 +50,39 @@
     width: 229px;
     height: 52px;
     font-family: 'Gilroy';
+  }
+  &-wrapper {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  &-toggle {
+    display: none;
+    width: 33px;
+    height: 23px;
+    position: relative;
+    cursor: pointer;
+    margin-left: 27px;
+    &::before,
+    &::after,
+    span {
+      content: '';
+      position: absolute;
+      right: 0;
+      background: #090808;
+      height: 3.3px;
+      width: 100%;
+    }
+    &::before {
+      top: 0;
+    }
+    span {
+      top: calc(50% - 1.5px);
+    }
+    &::after {
+      bottom: 0;
+      width: 80%;
+    }
   }
 }
 

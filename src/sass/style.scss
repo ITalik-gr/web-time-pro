@@ -38,6 +38,9 @@ ul {
     font-family: 'Gilroy';
 }
 .page {
+    &-bg {
+        overflow: hidden;
+    }
     &-text {
         display: flex;
         flex-direction: column;
@@ -71,3 +74,5 @@ ul {
 @import 'blocks/feedback';
 @import 'blocks/discuss';
 @import 'blocks/footer';
+
+@import 'base/media';

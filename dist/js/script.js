@@ -51,7 +51,9 @@ var mySwiper2 = new Swiper('.case-slider', {
 
 let menu = document.querySelector('.menu'),
     toggle = document.querySelector('.nav-toggle'),
-    closeMenu = document.querySelector('.menu-close');
+    closeMenu = document.querySelector('.menu-close'),
+    closeCookies = document.querySelector('.close-cookies'),
+    cookies = document.querySelector('.cookies');
 
 toggle.addEventListener('click', function() {
   menu.classList.toggle('menu-active');
@@ -59,6 +61,10 @@ toggle.addEventListener('click', function() {
 closeMenu.addEventListener('click', function() {
   menu.classList.remove('menu-active');
 });
+
+closeCookies.addEventListener('click', function() {
+  cookies.classList.add('cookies-close');
+})
 
 
 var modal = document.getElementById('form');

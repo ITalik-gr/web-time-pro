@@ -601,9 +601,9 @@
                 </div>
             </div>
             <div class="discuss-wrap">
-                <form action="thanks.html" class="discuss-form">
-                    <input required placeholder="Имя" minlength="2" class="discuss-name" type="text" name="" id="">
-                    <input required placeholder="Телефон" minlength="9" class="discuss-phone" type="number" name="" id="">
+                <form method="POST" action="mail.php" class="discuss-form">
+                    <input required placeholder="Имя" minlength="2" class="discuss-name" type="text" name="user_name" id="">
+                    <input required placeholder="Телефон" minlength="9" class="discuss-phone" type="number" name="user_phone" id="">
                     <button type="submit" class="discuss-btn btn">
                         Отправить
                     </button>
@@ -689,9 +689,9 @@
                 </div>
             </div>
 
-            <form action="thanks.html" class="form-body">
-                <input required placeholder="Имя" minlength="2" type="text" class="form-name form-input">
-                <input required placeholder="Телефон" minlength="9" type="number" class="form-phone form-input">
+            <form method="POST" action="mail.php" class="form-body">
+                <input required placeholder="Имя" minlength="2" type="text" name="user_name" class="form-name form-input">
+                <input required placeholder="Телефон" minlength="9" type="number" name="user_phone" class="form-phone form-input">
 
                 <label for="#">
                     <input required type="checkbox" name="" id="">

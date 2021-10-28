@@ -5,6 +5,12 @@
     &-wrap {
       justify-content: space-around;
       flex-wrap: wrap;
+      max-width: 849px;
+    }
+    &-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     &-card {
       margin-bottom: 30px;
@@ -81,6 +87,10 @@
   .nav {
     &-btn {
       display: none;
+    }
+    &-wrapper {
+      position: relative;
+      visibility: visible;
     }
     &-mobile {
       display: flex;
@@ -391,9 +401,14 @@
   .services {
     &-wrap {
       justify-content: center;
+      max-width: 670px;
     }
     &-text {
       margin-bottom: 30px;
+    }
+    &-card {
+      max-width: 342px;
+      width: 100%;
     }
     &-descr {
       p {

@@ -80,6 +80,8 @@
     justify-content: center;
     align-items: center;
     display: flex;
+    position: absolute;
+    visibility: hidden;
   }
   &-toggle {
     display: none;
@@ -164,7 +166,7 @@
   }
   &-cards {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 114px;
   }
   &-card {
@@ -178,7 +180,8 @@
       font-size: 40px;
       line-height: 130%;
       margin-bottom: 4px;
-      background: linear-gradient(140deg, #FF0000 0%, #FF7A00 80%, #FFB300 100%);
+      font-style: italic;
+      background: linear-gradient(-50deg,red 0,#ff7a00 80%,#ffb300 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
